@@ -1,6 +1,6 @@
 <template>
   <h1 class="myclass">{{ header }}</h1>
-  <input type="text" v-model="product" v-on:keyup.enter="AddItem" placeholder="Add an item" /> <button @click="AddItem">Add</button>
+  <input type="text" v-model="product" @keyup.enter="AddItem" placeholder="Add an item" /> <button @click="AddItem">Add</button>
   <label>
   <input type="checkbox" v-model="itemPrirority"/>
   High Priority
